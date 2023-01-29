@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body{
+   font-family: 'Poppins', sans-serif;
+   overflow: hidden;
+}
+
+button{
+   font-family: 'Poppins', sans-serif;
+   background-color: green;
+   color: white;
+   border: 2px solid black;
+   padding: 10px;
+   border-radius: 50px;
+   margin-top: 400px;
+}
+
+button:hover{
+   background-color: #86E5FF;
+   color: black;
+}
+
+canvas{
+   border: 3px dashed black;
+   animation: colorchange 4s infinite;
+}
+
+@keyframes colorchange{
+   from{
+      box-shadow: 2px 2px 20px green;
+   }
+   to{
+    box-shadow: 2px 2px 20px blue;
+   }
+}
+
+h1{
+   transition: transfrom 2s infinite ease;
+   cursor: pointer;
+}
+
+h1:hover{
+  transform: translateY(-10%);
+  animation: rotate 1.5s infinite linear;
+}
+
+@keyframes rotate{
+   10%{
+     rotate: 45deg;
+   }
+   20%{
+     rotate: 90deg;
+   }
+   30%{
+     rotate: 135deg;
+   }
+   40%{
+     rotate: 180deg;
+   }
+   50%{
+     rotate: 135deg;
+   }
+   60%{
+     rotate: 90deg;
+   }
+   70%{
+     rotate: 45deg;
+   }
+   0%,80%, 90%, 100%{
+     rotate: 0deg;
+   }
+}
+
+hr{
+   margin: 0;
+}
